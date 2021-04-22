@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-LightItalic.eot");
+  src: local("Rooney Sans Light Italic"), local("RooneySans-LightItalic"),
+    url("../font/RooneySans-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-LightItalic.woff2") format("woff2"),
+    url("../font/RooneySans-LightItalic.woff") format("woff"),
+    url("../font/RooneySans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-BlackItalic.eot");
+  src: local("Rooney Sans Black Italic"), local("RooneySans-BlackItalic"),
+    url("../font/RooneySans-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-BlackItalic.woff2") format("woff2"),
+    url("../font/RooneySans-BlackItalic.woff") format("woff"),
+    url("../font/RooneySans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-HeavyItalic.eot");
+  src: local("Rooney Sans Heavy Italic"), local("RooneySans-HeavyItalic"),
+    url("../font/RooneySans-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-HeavyItalic.woff2") format("woff2"),
+    url("../font/RooneySans-HeavyItalic.woff") format("woff"),
+    url("../font/RooneySans-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-Heavy.eot");
+  src: local("Rooney Sans Heavy"), local("RooneySans-Heavy"),
+    url("../font/RooneySans-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-Heavy.woff2") format("woff2"),
+    url("../font/RooneySans-Heavy.woff") format("woff"),
+    url("../font/RooneySans-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-Medium.eot");
+  src: local("Rooney Sans Medium"), local("RooneySans-Medium"),
+    url("../font/RooneySans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-Medium.woff2") format("woff2"),
+    url("../font/RooneySans-Medium.woff") format("woff"),
+    url("../font/RooneySans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-Black.eot");
+  src: local("Rooney Sans Black"), local("RooneySans-Black"),
+    url("../font/RooneySans-Black.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-Black.woff2") format("woff2"),
+    url("../font/RooneySans-Black.woff") format("woff"),
+    url("../font/RooneySans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-Bold.eot");
+  src: local("Rooney Sans Bold"), local("RooneySans-Bold"),
+    url("../font/RooneySans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-Bold.woff2") format("woff2"),
+    url("../font/RooneySans-Bold.woff") format("woff"),
+    url("../font/RooneySans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-RegularItalic.eot");
+  src: local("Rooney Sans Regular Italic"), local("RooneySans-RegularItalic"),
+    url("../font/RooneySans-RegularItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/RooneySans-RegularItalic.woff2") format("woff2"),
+    url("../font/RooneySans-RegularItalic.woff") format("woff"),
+    url("../font/RooneySans-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-MediumItalic.eot");
+  src: local("Rooney Sans Medium Italic"), local("RooneySans-MediumItalic"),
+    url("../font/RooneySans-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../font/RooneySans-MediumItalic.woff2") format("woff2"),
+    url("../font/RooneySans-MediumItalic.woff") format("woff"),
+    url("../font/RooneySans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-Light.eot");
+  src: local("Rooney Sans Light"), local("RooneySans-Light"),
+    url("../font/RooneySans-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-Light.woff2") format("woff2"),
+    url("../font/RooneySans-Light.woff") format("woff"),
+    url("../font/RooneySans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-Regular.eot");
+  src: local("Rooney Sans Regular"), local("RooneySans-Regular"),
+    url("../font/RooneySans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-Regular.woff2") format("woff2"),
+    url("../font/RooneySans-Regular.woff") format("woff"),
+    url("../font/RooneySans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rooney Sans";
+  src: url("../font/RooneySans-BoldItalic.eot");
+  src: local("Rooney Sans Bold Italic"), local("RooneySans-BoldItalic"),
+    url("../font/RooneySans-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("../font/RooneySans-BoldItalic.woff2") format("woff2"),
+    url("../font/RooneySans-BoldItalic.woff") format("woff"),
+    url("../font/RooneySans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body{
+  font-family: "Rooney Sans";
+}
+
+a, ul, li{
+  outline: 0;
+  text-decoration: none;
+}
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-half {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+.col-half:first-child {
+  padding-left: 0;
+}
+
+.col-half:last-child {
+  padding-right: 0;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.flex {
+  min-width: 620px;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}
+
+.tool-tip {
+  background-color: #424242;
+  height: 90px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.tool-tip:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  right: 2em;
+  border-top: 15px solid #424242;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+
+.donation-progress-bar {
+  border: 2px solid #dbdbdb;
+  width: 100%;
+  background: #fafbfa;
+}
+
+#progress {
+  background-color: #ed6033;
+}
+
+.description {
+  border: 2px solid #dbdbdb;
+  border-top: 0;
+  padding: 40px;
+  width: 100%;
+  font-size: 30px;
+  color: #808080;
+  margin-bottom: 15px;
+}
+
+.description p {
+  margin-bottom: 20px;
+}
+
+span#remaining-days {
+  color: #ed6033;
+  font-weight: bold;
+}
+
+.blue-text {
+  color: #0EA0D6;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.gray-btn {
+  background-color: #fafbfa !important;
+  border: 1px solid #dcdcdc !important;
+  color: #808080 !important;
+}
+.donors {
+  font-weight: bold;
+}
+
+button, .btn{
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Rooney Sans";
+  width: 100%;
+  display: block;
+  position: relative;
+  height: 75px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 75px;
+  padding: 0;
+}
+
+.success {
+  background-color: #00be1c;
+}
+
+.donation-amount {
+  width: 100%;
+  height: 75px;
+  font-size: 30px;
+  padding-left: 35px;
+  padding-right: 25px;
+  font-weight: bold;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.currency-symbol {
+  position: absolute;
+  display: block;
+  transform: translate(0, -49%);
+  top: 49%;
+  pointer-events: none;
+  width: 25px;
+  text-align: center;
+  font-style: normal;
+  left: 10px;
+  font-weight: bold;
+}
+#error {
+  color: red;
+  font-size: 18px;
+}
+
+
+@media screen and (max-width:768px){
+
+  .flex{
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  .tool-tip, .description, .blue-text, button, .btn, .donation-amount{
+    font-size: 17px;
+  }
+  .col-half{
+    padding: 10px;
+  }
+  .tool-tip{
+    height: 60px;
+  }
+  .donation-amount{ 
+    height: 50px;
+  }
+
+  .donation-amount, button, .btn{ 
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .description{
+    padding: 25px;
+  }
+  
+}

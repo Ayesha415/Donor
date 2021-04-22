@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Task</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/custom.js" defer></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-full">
+          <div class="flex">
+            <div class="row">
+              <div class="tool-tip">
+                <span
+                  ><b id="toolTip-value"></b> still needed for this
+                  project</span
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="donation-progress-bar">
+                <div id="progress" style="height: 20px; width: 40%"></div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="description">
+                <p><span id="remaining-days"></span> to fund this project.</p>
+                <p>
+                  Join the <span class="donors" id="donors">0</span> other donors who
+                  have already supported this project. Every dollar helps.
+                </p>
+                <div class="row">
+                  <form id="form">
+                    <div class="col-half">
+                      <input
+                        type="number"
+                        id="donation-amount"
+                        class="donation-amount"
+                      /><span class="currency-symbol">$</span>
+                    </div>
+                    <div class="col-half">
+                      <button type="submit" class="btn success">Give Now</button>
+                    </div>
+                  </form>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-full">
+                    <small id="error"></small>
+                  </div>
+                  <div class="col-full">
+                    <a href="#" class="blue-text">why give $50?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                    <!--Buttons-->
+            <div class="row">
+              <div class="col-half">
+                <a href="#" class="btn gray-btn donors" id="save">Save for later</a>
+              </div>
+              <div class="col-half">
+                <a href="#" class="btn gray-btn donors" id="save">Tell your friends</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
